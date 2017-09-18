@@ -1,20 +1,21 @@
-################################################
+###############################################################################
 # WILD 370
 # LAB: INTRODUCTION TO R -- Sept. 19, 2017
-################################################
+###############################################################################
 
-# ==============================================
+# =============================================================================
 # What is R and why is it awesome?
-# ==============================================
+# =============================================================================
 
+	# Flexibility
 	# Data visualization
 	# Statistical modeling
 	# Mapping
 	# ...so much more!
 
-# ==============================================
+# =============================================================================
 # Getting help -- and further resources!
-# ==============================================
+# =============================================================================
 
 	# ---------------------
 	# Help functions within R
@@ -27,9 +28,9 @@
 		# Stackoverflow
 		# Peers
 
-# ==============================================
+# =============================================================================
 # INITIAL SYSTEM SETUP
-# ==============================================
+# =============================================================================
 
 	# ---------------------
 	# Set working directory
@@ -59,89 +60,84 @@
 		library(dplyr)
 		library(ggplot2)
 
-# ==============================================
+# =============================================================================
 # OBJECTS IN R
-# ==============================================
+# =============================================================================
 
 	# ----------------------
-	# Assigning objects
-		a <- 1 # Use a backward-facing arrow!
-		a = 1 # Avoid using an equals sign
+	# General syntax for ssigning objects
+		a1 <- 1 # Use a backward-facing arrow!
+		a2 = 1 # Avoid using an equals sign
 
 	# ----------------------
 	# Vectors - 1-dimensional objects
-		v1 <- runif(50, 0, 1)  #random uniform dist.
-		v1
-		v1[1:10]
-		v1[2]
-		head(v1) #preview beginning / end
-		tail(v1)
-		v2 <- v1[-3]
-
-c(1,2,3) #concatenate
-c(1:2,4:10)
-
-
-v1[c(1:2,4:10)]
-
-#looking the structure of an object
-
-str(v1)
-
-#Matrices - 2d    matrix[rows,columns]
-
-m1 <- matrix(nrow=2, ncol=3)
-
-m1 <- matrix("A",nrow=2, ncol=3)
-
-m1 <-  matrix(rnorm(6,2,0), nrow=2, ncol=3)
-
-str(m1)
-m1 <-  matrix(1:6, nrow=2, ncol=3)
-
-m1[1, 2:3]
+		
+		# Created from specific numbers you choose
+			v1 <- c(1,2,3,4,5,6,7)
+			v1
+			v1[1:4]
+			head(v1)
+			tail(v1)
+			v1a <- v1[4:6]
+			str(v1)
+		
+		# Random pulls from a specified distribution
+			v2 <- runif(50, 0, 1)  # Random uniform distribution
+			v2
+			v2[1:10]
+			v2[2]
+			head(v2) #preview beginning / end
+			tail(v2)
+			v2a <- v2[-3]
+			str(v2)
+	# --------------------------------------------------------------------------
+	# TASK #1: Create some data and then look at it!
 
 
-#DataFrames
-head(iris)
-
-df1 <- iris
-
-head(df1)
-str(df1)
-
-df1$Species
-
-df1[1:2, ]
-
-names(df1) <- c( "sl", "sw", "pl", "pw", "sp")
-
-names(df1)
-head(df1)
 
 
-names(df1)[5] <- "Species"
-
-head(df1)
-
-df1[1:10 , c("sl", "Species")]
-df1[1:10 , c(1,5)]
-
-# $ attributes a column to dataframe
-
-df1$Species # just column Species
-
-df1$Species[10]
 
 
-#Array - multidimensional 
-?array()
 
-ray <- array(rnorm(8,0,1), dim=c(2,2,2))
 
-str(ray)
 
-ray[ , ,]
 
-ray2 <- ray[    ,    , -2]
+
+
+	# --------------------------------------------------------------------------
+	
+	# ------------------------
+	# Matrices - 2-dimensional objects
+		m1 <- matrix(nrow=2, ncol=3)
+		m1 <- matrix("A",nrow=2, ncol=3)
+		m1 <-  matrix(rnorm(6,2,0), nrow=2, ncol=3)
+		str(m1)
+		m1 <-  matrix(1:6, nrow=2, ncol=3)
+		m1[1, 2:3]
+
+	# ------------------------
+	# Data frames
+		head(iris)
+		df1 <- iris
+		head(df1)
+		str(df1)
+		df1$Species
+		df1[1:2, ]
+		names(df1) <- c( "sl", "sw", "pl", "pw", "sp")
+		names(df1)
+		head(df1)
+		names(df1)[5] <- "Species"
+		head(df1)
+		df1[1:10 , c("sl", "Species")]
+		df1[1:10 , c(1,5)]
+		df1$Species # just column Species
+		df1$Species[10]
+
+	# ------------------------
+	# Array 
+		?array()
+		ray <- array(rnorm(8,0,1), dim=c(2,2,2))
+		str(ray)
+		ray[ , ,]
+		ray2 <- ray[    ,    , -2]
 
