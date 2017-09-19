@@ -1,6 +1,7 @@
 ###############################################################################
 # WILD 370
 # LAB: INTRODUCTION TO R -- Sept. 19, 2017
+# Notes are based on materials created by Will Janousek and Art Woods
 ###############################################################################
 
 # =============================================================================
@@ -25,18 +26,31 @@
 	# ---------------------
 	# External resources
 		# Google! 
-		# Stackoverflow
+		# Stack Overflow
 		# Peers
 
 # =============================================================================
 # INITIAL SYSTEM SETUP
 # =============================================================================
 
-	# ---------------------
-	# Set working directory
-		setwd("C:/") # If you're on a PC
-		# setwd("/Users/Will/Desktop/R Course/Week 1/") # If you're on a Mac
+  # ---------------------
+  # Choose a text editor through which you can access your R console
+    # Base R
+	  # RStudio
+    # Notepad ++
+    # Sublime
+    # Many more that don't support R as well as other languages
 
+  # ---------------------
+  # Saving your work
+    # Script vs. console
+
+  # ---------------------
+	# Set working directory
+		# setwd("C:/") # If you're on a PC
+		# setwd("/Users/Will/Desktop/R Course/Week 1/") # If you're on a Mac
+    setwd("~/GitHub/IntroToR")
+		
 	# ---------------------
 	# Check working directory to make sure it matches
 		getwd()
@@ -58,7 +72,20 @@
 	# Install packages
 		install.packages("dplyr")
 		library(dplyr)
-		library(ggplot2)
+		
+	# ---------------------------------------------------------------------------
+	# EXERCISE 1:
+		
+		# Create a folder on your desktop and name it with your first name
+		
+		# Go online to https://github.com/jenny603 
+		    # Navigate to IntroToR
+		
+		# Set your working directory to be that folder
+		
+		# Check to make sure it set correctly
+		# 
+		
 
 # =============================================================================
 # OBJECTS IN R
@@ -141,3 +168,12 @@
 		ray[ , ,]
 		ray2 <- ray[    ,    , -2]
 
+# =============================================================================
+# FOR REFERENCE
+# =============================================================================
+
+	# -------------------------
+	# Clear or clean up workspace
+		ls()
+		rm(list = ls())
+		rm(x)	
