@@ -239,3 +239,18 @@
 		# Use upper- and lower-case words intentionally
 		# Don't use spaces; always use underscores
 		
+# =============================================================================
+# EXTRA PROBLEMS
+# =============================================================================
+		
+#1. Create a vector of 1000 random draws from a normal distribution and add 
+#         them up.
+		
+#2. Create a second vector of 1000 random draws and add it to the first vector.
+		
+#3. Turn the second vector into a 10x100 matrix.
+		
+#4. Make a 3x3x3 cube of data in which the individual values are random draws
+#         from a uniform distribution having limits between 0 and 10. (Refer
+#         to runif()). To make the cube, you'll have to use array().
+		
