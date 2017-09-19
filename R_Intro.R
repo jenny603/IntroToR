@@ -71,20 +71,23 @@
 		library(dplyr)
 		
 	# ---------------------------------------------------------------------------
-	# EXERCISE 1:
+	# EXERCISE 1: Practice using the commands described above.
 		
 		#1. Create a folder on your desktop and name it with your first name
 		
 		#2. Open a new R script.
 		
-		#2. Go online to https://github.com/jenny603 
+		#3. Go online to https://github.com/jenny603 
 		      # Navigate to the "IntroToR" folder
 		      # Click on "HeightsWeights.txt"
 		      # Click the "Raw" button in the top right corner
 		      # Select all, copy and paste the dataset into the R script you opened
 		      #       in step 2.
 		      # Save the script in the folder you created in Step 1 and name it 
-		      #       "HeightsWeights.txt"
+		      #       "HeightsWeights.txt". You do want to save it as a .txt file,
+		      #       so don't worry if a warning pops up. Close the script.
+		
+		#4. Open another new R script that you'll be working in.
 		
 		#3. Set your working directory to be the folder you created in Step 1.
 		
