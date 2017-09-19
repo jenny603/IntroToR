@@ -47,7 +47,6 @@
   # ---------------------
 	# Set working directory
 		# setwd("C:/") # If you're on a PC
-		# setwd("/Users/Will/Desktop/R Course/Week 1/") # If you're on a Mac
     setwd("~/GitHub/IntroToR")
 		
 	# ---------------------
@@ -160,51 +159,41 @@
 
 	# ------------------------
 	# Data frames
-		head(iris)
 		df1 <- iris
 		head(df1)
 		str(df1)
+		
 		df1$Species
 		df1[1:2, ]
+		
 		names(df1) <- c( "sl", "sw", "pl", "pw", "sp")
 		names(df1)
 		head(df1)
+		
 		names(df1)[5] <- "Species"
 		head(df1)
+		
 		df1[1:10 , c("sl", "Species")]
 		df1[1:10 , c(1,5)]
-		df1$Species # just column Species
-		df1$Species[10]
 
-	# ------------------------
-	# Array 
-		?array()
-		ray <- array(rnorm(8,0,1), dim=c(2,2,2))
-		str(ray)
-		ray[ , ,]
-		ray2 <- ray[    ,    , -2]
+		df1$Species[10]
 		
 	# ---------------------------------------------------------------------------
-	# EXERCISE 2: Create some data and then look at it!
+	# EXERCISE 2: Explore different object types and data types
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	# ---------------------------------------------------------------------------
+	#1. Determine the class of each of the 5 columns in the iris dataset
 		
-# =============================================================================
-# DATA VISUALIZATION
-# =============================================================================
-		
-		
+	#2. How many columns and rows are in the dataset? Try ncol(), nrow(), & dim().
+	
+	#2. Calculate some summary statistics on the iris dataset. (Hint: use 
+	#       the ? function we talked about in line 23 if you don't know how.)
+	#             Calculate the mean sepal length.
+	#             Calculate the median sepal width.
+	#             What is the maximum value of petal length?
+	#             What is the minimum value of petal width?
+	#             What are the levels (i.e. different values) of the species?
+	#             Explore the summary() function; apply it to the whole data frame
+	#                   and then just to come columns.
 
 # =============================================================================
 # FOR REFERENCE
@@ -212,6 +201,12 @@
 
 	# -------------------------
 	# Clear or clean up workspace
-		ls()
-		rm(list = ls())
-		rm(x)	
+		ls() # List all of the objects currently saved in your environment
+		rm(list = ls()) # Be careful - this will clear your whole environment!
+		rm(x)	# Use to remove one object from your environment
+		
+	# -------------------------
+	# Helpful tips
+		# Use upper- and lower-case words intentionally
+		# Don't use spaces; always use underscores
+		
