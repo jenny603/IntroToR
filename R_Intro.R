@@ -194,6 +194,32 @@
 	#             What are the levels (i.e. different values) of the species?
 	#             Explore the summary() function; apply it to the whole data frame
 	#                   and then just to come columns.
+		
+	# ---------------------------------------------------------------------------
+		
+# =============================================================================
+# DATA VISUALIZATION
+# ============================================================================= 
+		
+	# --------------------------
+	# Plotting
+		
+		hist(tmp1$weight.pounds)
+		hist(tmp1$weight.pounds, col = "gray")
+		
+		plot(tmp1$weight.pounds ~ tmp1$height.inches)
+		plot(tmp1$weight.pounds ~ tmp1$height.inches, pch = 8)
+		
+	# ---------------------------------------------------------------------------
+	# EXERCISE 3: Explore plotting
+		
+	#1. Use ?par() to look at many of the customizable graphical parameters 
+		
+	#2. Create a histogram of petal length from the iris dataset, color the bars 
+	#       blue, change the x-axis to read "Petal Length (cm)", and change the 
+	#       main title to read "Histogram of Iris Petal Length".
+		
+	# ---------------------------------------------------------------------------
 
 # =============================================================================
 # FOR REFERENCE
