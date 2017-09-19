@@ -38,7 +38,6 @@
     # Base R
 	  # RStudio
     # Notepad ++
-    # Sublime
     # Many more that don't support R as well as other languages
 
   # ---------------------
@@ -58,7 +57,6 @@
 	# ---------------------
 	# Read in some data
 		tmp1 <- read.table("HeightsWeights.txt", header=TRUE)
-		read.table("/Users/Will/Desktop/R Course/Week 1/HeightsWeights.txt", header=TRUE)
 
 	# ---------------------
 	# Look at the data
@@ -76,36 +74,64 @@
 	# ---------------------------------------------------------------------------
 	# EXERCISE 1:
 		
-		# Create a folder on your desktop and name it with your first name
+		#1. Create a folder on your desktop and name it with your first name
 		
-		# Go online to https://github.com/jenny603 
-		    # Navigate to IntroToR
+		#2. Open a new R script.
 		
-		# Set your working directory to be that folder
+		#2. Go online to https://github.com/jenny603 
+		      # Navigate to the "IntroToR" folder
+		      # Click on "HeightsWeights.txt"
+		      # Click the "Raw" button in the top right corner
+		      # Select all, copy and paste the dataset into the R script you opened
+		      #       in step 2.
+		      # Save the script in the folder you created in Step 1 and name it 
+		      #       "HeightsWeights.txt"
 		
-		# Check to make sure it set correctly
-		# 
+		#3. Set your working directory to be the folder you created in Step 1.
 		
+		#4. Check to make sure the working directory set correctly.
+		
+		#5. Read in the data you just saved.
+		
+		#6. Look at the data using print(), head(), tail(), and str().
+		
+		#7. Install the dplyr package
+		
+	# ---------------------------------------------------------------------------
 
 # =============================================================================
 # OBJECTS IN R
 # =============================================================================
 
 	# ----------------------
-	# General syntax for ssigning objects
-		a1 <- 1 # Use a backward-facing arrow!
-		a2 = 1 # Avoid using an equals sign
+	# Saving objects
+		# The environment
+		# Overwriting
+		
+	# ----------------------
+	# Data types
+		# Numeric
+		# Integer
+		# Logical (T/F)
+		# Factor
+		# Character
+		
+	# ----------------------
+	# General syntax for assigning objects
+		a1 <- 1 # Use a backward-facing arrow! (Avoid using an equals sign)
 
 	# ----------------------
-	# Vectors - 1-dimensional objects
+	# Vectors - 1-dimensional objects of one data type
 		
-		# Created from specific numbers you choose
-			v1 <- c(1,2,3,4,5,6,7)
+		# Created from specific elements you choose
+			v1 <- c(1,2,3,4,5,6,7,8,9,10)
+		  print(v1)
 			v1
 			v1[1:4]
 			head(v1)
 			tail(v1)
 			v1a <- v1[4:6]
+			v1a
 			str(v1)
 		
 		# Random pulls from a specified distribution
@@ -113,25 +139,15 @@
 			v2
 			v2[1:10]
 			v2[2]
-			head(v2) #preview beginning / end
+			head(v2) 
 			tail(v2)
 			v2a <- v2[-3]
 			str(v2)
-	# --------------------------------------------------------------------------
-	# TASK #1: Create some data and then look at it!
-
-
-
-
-
-
-
-
-
-
-
-
-	# --------------------------------------------------------------------------
+			
+		# Character vector
+			apple <- c("red", "green","yellow")
+			apple
+			class(apple)
 	
 	# ------------------------
 	# Matrices - 2-dimensional objects
@@ -167,6 +183,28 @@
 		str(ray)
 		ray[ , ,]
 		ray2 <- ray[    ,    , -2]
+		
+	# ---------------------------------------------------------------------------
+	# EXERCISE 2: Create some data and then look at it!
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	# ---------------------------------------------------------------------------
+		
+# =============================================================================
+# DATA VISUALIZATION
+# =============================================================================
+		
+		
 
 # =============================================================================
 # FOR REFERENCE
